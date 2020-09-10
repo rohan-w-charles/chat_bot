@@ -1,0 +1,72 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- purchase_car
+- price_query
+- book_appointment
+- test_drive
+- says_name
+- says_email
+- purchase_price
+- says_date_and_time
+- says_car_details
+entities:
+- name
+- nation
+- year
+- model
+- make
+- date
+- time
+- email
+slots:
+  email:
+    type: text
+  make:
+    type: text
+  model:
+    type: text
+  name:
+    type: text
+  year:
+    type: text
+responses:
+  utter_date_and_time:
+  - text: What time and date do u want the appointment to be ?
+  utter_email_quote:
+  - text: We have emailed you a quote !!
+  utter_email_appointment:
+  - text: We have emailed you the appointment confirmation !!
+  utter_car_details:
+  - text: Can u tell the type of car you want to buy?
+  utter_ask_name:
+  - text: Can u tell me your name ?
+  utter_ask_email:
+  - text: Can u tell me your email?
+  utter_gratitidue:
+  - text: Thanks for the info !!
+  utter_assitance:
+  - text: How many I help you today ?
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+actions:
+- action_hello_world
